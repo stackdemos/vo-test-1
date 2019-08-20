@@ -19,6 +19,7 @@ kubectl := kubectl --context="$(DOMAIN_NAME)" --namespace="$(NAMESPACE)"
 kubectlapp := kubectl --context="$(DOMAIN_NAME)"
 
 deploy:
+	aaa
 	$(kubectl) apply -f templates/credentials.yaml
 	$(kubectl) apply -f templates/pipeline.yaml
 .PHONY: deploy
